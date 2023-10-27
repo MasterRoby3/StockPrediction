@@ -46,8 +46,6 @@ print(win_rate)
 
 percent_returns = daily_returns / stock_data["Open"] * 100
 
-print([ret for ret in percent_returns if ret > 10 or ret < -10])
-
 fig = plt.figure(1, figsize=(15,10))
 plt.hist(percent_returns, bins = 120, range=(-12,12), facecolor=seshadri[0], alpha=0.8, edgecolor="white", label="Percentage daily returns occurrences")
 
