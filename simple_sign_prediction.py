@@ -81,10 +81,11 @@ plt.tick_params(direction='in',which='major', length=10, bottom=True, top=True, 
 plt.xlabel(r'Percentage daily return', fontsize=14) 
 plt.ylabel(r'Occurrences',fontsize=14)  # label the y axis
 
+plt.yscale('log')
 
 plt.legend(fontsize=14, loc="upper right", bbox_to_anchor=(0.99, 0.99))  # add the legend (will default to 'best' location)
 
-plt.savefig("plots/MSFT_daily_occs.png", dpi=300)
+plt.savefig("plots/MSFT_daily_occs_semilogx.png", dpi=300)
 
 plt.show()
 
